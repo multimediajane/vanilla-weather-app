@@ -42,7 +42,17 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-let apiKey = "7408fdf253ddebead7e68be64b518024";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Buckeye&units=metric&appid=${apiKey}`;
+function search(city) {
+  let apiKey = "7408fdf253ddebead7e68be64b518024";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+  axios.get(apiUrl).then(displayTemperature);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
