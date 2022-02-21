@@ -15,36 +15,46 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h1>Buckeye</h1>
-        <ul>
-          <li>Sunday 05:00</li>
-          <li>Mostly Sunny</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="Mostly Sunny"
-            />
-            26°C | °F
-          </div>
-          <div class="col-6">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+            <h1>Buckeye</h1>
             <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 10%</li>
-              <li>Wind: 6 km/h</li>
+              <li>Sunday 05:00</li>
+              <li>Mostly Sunny</li>
             </ul>
           </div>
-          <small
-            ><a
-              href="https://github.com/multimediajane/vanilla-weather-app"
-              target="_blank"
-              >Open-source code</a
-            >
-            by Bekah Jane
-          </small>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="Mostly Sunny"
+                  class="float-left"
+                />
+                <div class="float-left">
+                  <strong>26</strong
+                  ><span class="units">°C | <a href="#">°F</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: 0%</li>
+                <li>Humidity: 10%</li>
+                <li>Wind: 6 km/h</li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <small
+          ><a
+            href="https://github.com/multimediajane/vanilla-weather-app"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Bekah Jane
+        </small>
       </div>
     </div>
     <script src="src/index.js"></script>
