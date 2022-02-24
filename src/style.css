@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-  color: #22066a;
+  color: #a31383;
   font-size: 30px;
   font-weight: 100;
   line-height: 28px;
@@ -46,12 +46,12 @@ li:first-letter {
 }
 
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 650px;
   margin: 30px auto;
 }
 
 .weather-app {
-  max-width: 600px;
+  max-width: 650px;
   margin: 30px auto;
   padding: 20px;
   border-radius: 5px;
@@ -96,7 +96,7 @@ li:first-letter {
   margin-top: 20px;
   text-align: center;
   font-size: 16px;
-  color: #b599fa;
+  color: #8f66f7;
 }
 
 .weather-forecast-date {
